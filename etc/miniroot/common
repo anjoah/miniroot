@@ -123,12 +123,12 @@ loadenv()
 	fi
 	if [ ! -s /.env ]; then
 		cat <<EOF > /.env
-#root=/dev/mmcblk0p1:/linuxroot
-#init=/sbin/init
+root=/dev/mmcblk0p1:/ubuntu
+init=/sbin/init
 #ethaddr=00:11:22:33:44:55
 #fbset_args="-a -nonstd 1 -g 1920 1080 1920 1080 32 -rgba 8/0,8/8,8/16,8/24"
 #fbset_args="-a -nonstd 4 -g 1280 720 1280 720 16 -rgba 5/11,6/5,5/0,0/0"
-#autoboot=1
+autoboot=1
 EOF
 	fi
 }
